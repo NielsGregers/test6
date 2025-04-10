@@ -2,7 +2,6 @@ name: Demo
 
 # Trigger the workflow manually
 on:
-
   workflow_dispatch: # Allows manual triggering
     inputs:
       hello:
@@ -22,6 +21,5 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Run Demo Script
-        run: pwsh ./_demo/run.ps1
+        run: pwsh ./demo/run.ps1
         shell: pwsh
-
